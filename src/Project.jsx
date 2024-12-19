@@ -3,6 +3,16 @@ function Project(){
     return(
             <div className="Projects">
                 <h2 className="Project">Projects</h2>
+                <div>
+                    <div className="ProjectFour">
+                        <h3 className="Fitness">Fitness Website</h3>
+                    </div>
+                   
+                    <ul className="ProjectListFour">
+                        <li>Designed and developed an interactive fitness website featuring workout recommendations and a customizable planning system, allowing users to create training programs tailored to their skill levels</li>
+                        <li>Leveraged React, JavaScript, HTML, CSS, and MongoDB build a dynamic and responsive website</li>
+                    </ul>
+                </div>
                 <div >
                     <div className="ProjectOne">
                         <a href="https://github.com/sjl4365/weather" className="SpecialOne">Weather Mobile App</a>

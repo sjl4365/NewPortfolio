@@ -6,7 +6,12 @@ function Workexperience(){
 
     <div className="RelevantWorkExperience">
         <h2 className="WorkExperience" >Relevant Work Experience</h2>
-
+        <div>
+            <div className="JobFour">
+                <h3 className="MOT">Ontario Ministry of Transportation</h3>
+                <h4 className="DateFour">Jan 2025 - Apr 2025 </h4>
+            </div>
+        </div>
         <div >
             <div className="JobOne">
                 <h3 className="TheScore">QA Analyst @ theScore</h3>
@@ -14,32 +19,27 @@ function Workexperience(){
             </div>
             <ul className="listOne">
 
-                <li>Worked on 17 releases on wagering team and conducted regression testing, backward compatibility, migration
-testing, and production smoke testing in different environments (UAT, Demo, and Staging) and devices (android, iOS,
-web) for theScore Bet and ESPN (~3000 test cases)</li>
-            <li>Created 5 new functional tickets on JIRA and Confluence by identifying bugs on production environment, signed off on
-~140 functional tickets (including 2 new features related to the rebranding of market logo and the recommendation of
-certain popular markets to display on the home page) by creating new test cases on TestRail and writing report</li>
+                <li>Worked on 17 releases for the wagering team, performing comprehensive regression, backward compatibility, migration,
+and production smoke testing across multiple environments (UAT, Demo, Staging) and platforms (Android, iOS, web) for
+theScore Bet and ESPN, covering approximately 3,000 test cases</li>
+            <li>Identified production bugs, creating 5 new functional tickets on JIRA and Confluence, and signed off on approximately 140
+functional tickets, including 2 feature enhancements related to market logo rebranding and home page market
+recommendations. Developed new test cases in TestRail and delivered detailed reports</li>
 
-                <li>Working on 9 releases on wagering team and conducted regression testing, backward compatibility, migration testing,
-                    and production smoke testing in different environments (UAT, Demo, and Staging) and devices (android, iOS, web) for
-                    theScore Bet and ESPN (~2000 test cases)</li>
-            <li>Created 3 new functional tickets on JIRA and Confluence by finding bugs on production environment, signed off on
-functional tickets (~40) by creating new test cases on TestRail and writing report</li>
-
-            <li>Participated in a weekly stand up by occasionally leading a session and helping other co-workers and from different
-department need clarification on wagering</li>
+            <li>Participated in weekly stand-ups, occasionally leading sessions, and provided cross-departmental support by offering
+clarification on wagering-related issues</li>
             </ul>
         </div>
         <div >
             <div className="JobTwo">
-                <h3 className="VC">Software Developer @ Venture Canada</h3>
+                <h3 className="VC">Software Developer @ MyHomeworkRewards</h3>
                 <h4 className="DateTwo">May 2023 – Jun 2023</h4>
             </div>
             <ul className="listTwo">
-                <li>Used PHP programming language to implement an interactive web-based platform for delivering math practice
-problems to students</li>
-                <li>Designed and implemented a diverse collection of short math practice problems of 100 questions</li>
+                <li>Developed an interactive, web-based platform using PHP to deliver math practice problems to students, enhancing
+engagement and accessibility</li>
+                <li>Designed and implemented a comprehensive set of 100 math practice problems for 200 Grades 11 and 12 students, aligned
+with the Toronto District School Board curriculum</li>
             </ul>
         </div>
         <div >
@@ -48,11 +48,11 @@ problems to students</li>
                 <h4 className="DateThree">Mar 2023 – Apr 2023</h4>
             </div>
             <ul className="listThree">
-                <li>Implemented additional web plug-ins, enhancing customer engagement and satisfaction by using HTML and CSS</li>
-                <li>Optimized the website by understanding UI/UX principles, cross-browser compatibility, and adhering to general web
-functionality and standards</li>
-                <li>Collaborated closely with cross-functional teams, fostering teamwork and effective communication while consistently
-meeting project deadline</li>
+                <li>Developed and integrated web plug-ins using HTML and CSS to enhance customer engagement and satisfaction</li>
+                <li>Optimized website performance by applying UI/UX best practices, ensuring cross-browser compatibility, and adhering to web
+standards and functionality requirements</li>
+                <li>Collaborated with cross-functional teams, promoting effective communication and teamwork, while consistently delivering
+projects on time</li>
             </ul>
         </div>
     </div>);
