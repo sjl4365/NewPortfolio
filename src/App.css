@@ -179,11 +179,11 @@ padding-bottom: 10px;
   color: hsl(0, 0%, 33%);
 }
 .HackListOne ,.HackListTwo{
-  font-size: 1.3rem;
+  font-size: 1rem;
   color: hsl(0, 0%, 33%);
 }
 .ProjectListOne,.ProjectListTwo,.ProjectListThree, .ProjectListFour{
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: hsl(0, 0%, 33%);
 }
 
