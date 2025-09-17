@@ -1,8 +1,19 @@
+/*src/Project.jsx */
 function Project(){
     
     return(
             <div className="Projects">
                 <h2 className="Project">Projects</h2>
+                <div >
+                    <div className="ProjectOne">
+                        <a href="https://github.com/sjl4365/TodayHistory" className="SpecialOne">Today History</a>
+                    </div>
+                    
+                    <ul className="ProjectListOne">
+                        <li>Currently designing and developing a 'Today in History' mobile app using React Native</li>
+                        <li>App will display a random historical event for a given month and year and the content will be available in English, Korean, Chinese, and Japanese</li>
+                    </ul>
+                </div>
                 <div>
                     <div className="ProjectFour">
                         <h3 className="Fitness">Fitness Website</h3>

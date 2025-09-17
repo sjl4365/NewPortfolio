@@ -1,207 +1,383 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,300&display=swap');
+/*src/App.css */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap');
 
+/* Modern Color Scheme Variables */
+:root {
+  --primary-bg: #ffffff;
+  --secondary-bg: #f8fafc;
+  --accent-bg: #e0f2fe;
+  --primary-text: #1e293b;
+  --secondary-text: #64748b;
+  --accent-text: #0ea5e9;
+  --border-color: #e2e8f0;
+  --hover-bg: #f1f5f9;
+  --button-primary: #0ea5e9;
+  --button-hover: #0284c7;
+  --success: #10b981;
+  --warning: #f59e0b;
+}
 
-#root, html, body, .Route{
+/* Reset and Base Styles */
+* {
   margin: 0;
   padding: 0;
-  width: 100%;
-  height: 100%;  
+  box-sizing: border-box;
 }
 
-#root{
+html, body, #root {
+  width: 100%;
+  min-height: 100vh;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  background-color: var(--primary-bg);
+  color: var(--primary-text);
+  line-height: 1.6;
+}
+
+/* Layout Structure */
+.Route {
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  min-width: 100%;
+  background-color: var(--primary-bg);
 }
 
-.Route{
-  width: 100%;
-  height: 100vh;
-  display: flex; 
-  flex-direction:column;
-  background-color:  rgb(223, 241, 247);
-
-}
-.Route>div{
+.content {
   flex: 1;
   display: flex;
   flex-direction: column;
 }
-.Route>div>*{
-  flex: 1;
-}
-.Home{
-  display:flex;
-  flex-direction: column;
-  flex-grow: 1;
-  text-align: center;
-  background-color: rgb(223, 241, 247);;
-  color: hsl(0, 0%, 33%);
-}
-body{
-  font-family: "Poppins", sans-serif;
-  border: 0;
-}
-/* p{
-  color: hsl(0, 0%, 33%);
-} */
-/* .GetInTouch{
-  color: hsl(0, 0%, 33%);
-} */
 
-
-.RelevantWorkExperience, .Hackathons, .Projects{
-  text-align: left;
-  padding: 10px;
-}
-.RelevantWorkExperience{
-  text-align: left;
-  padding: 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: left;
-
-}
-.HackathonProject{
-  text-align: left;
-  padding: 10px;
-
-  font-size: 1.5rem;
-}
-.JobOne, .JobTwo, .JobThree, .JobFour{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  margin-bottom: 10px;
-  padding: 0 10px;
-}
-.TheScore, .DateOne, .VC, .DateTwo, .Ruii,.DateThree,.DateFour,.MOT{
-  margin:0;
+/* Navigation Styles */
+nav {
+  background-color: var(--primary-bg);
+  border-bottom: 1px solid var(--border-color);
+  padding: 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  backdrop-filter: blur(10px);
 }
 
-.links{
-  text-align: end;
-  display: inline-end;
-  width: 100%;
-}
-
-
-.HomeRoute,.WorkRoute,.HackRoute, .ProjRoute{
-  padding-right: 30px;
-  font-size: 1.5rem;}
-
-a{
-  font-weight:100;
-  text-decoration: none;
-  font-size: 1rem;
-  padding-right: 10px;
-}
-.Photo{
-  width: 20rem;
-  height: 22rem;
-  border-radius: 85px;
-}
-
-.LinkedinButton, .ResumeButton{
-  background-color: rgb(183, 214, 177);
-  border: 2px solid rgb(183, 214, 177);
-  padding: 20px 50px 20px;
-  border-radius:20px ;
-  box-shadow: 3px 3px rgb(195, 215, 193);
-  cursor: pointer;
-  font-size: 1em;
-  font-weight: 500;
-  transition: border-color 0.25s;
-}
-.LinkedinButton{
-  margin-right: 35px;
-}
-.ResumeButton{
-  margin-left: 35px;
-}
-.LinkedinButton:hover, .ResumeButton:hover{
-  background-color: rgb(147, 214, 135);
-}
-
-.AboutMe{
-  padding: 1px 20%;
-}
-a:hover{
-  color: red;
-  font-size: 2rem;
-}
-
-.SpecialOne,.SpecialTwo{
-  font-size: 1.5rem;
-  color:  hsl(0, 0%, 33%);
-}
-
-.Name, .About{
-  color:  hsl(0, 0%, 33%);
-  font-size: 5rem;
-}
-.AboutMe{
-  font-size: 1.5rem;
-}
-.GetInTouch{
-font-size: 1.5rem;
-padding-bottom: 10px;
-}
-
-.WorkExperience, .Hackathon, .Project{
-  font-size: 5rem;
-  color:  hsl(0, 0%, 33%);
-  margin: 0;
-  width: 100vw;
-  height: 10vh;
+.links {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 1rem 2rem;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
 }
- 
-.JobOne, .JobTwo, .JobThree, .JobFour, .HackOne, .HackTwo ,.ProjectOne,.ProjectTwo,.ProjectThree, .ProjectFour{
+
+.HomeRoute, .WorkRoute, .HackRoute, .ProjRoute, .SchoolRoute {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--secondary-text);
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.HomeRoute:hover, .WorkRoute:hover, .HackRoute:hover, .ProjRoute:hover, .SchoolRoute:hover {
+  color: var(--accent-text);
+  background-color: var(--hover-bg);
+  transform: translateY(-1px);
+}
+
+/* Home Page Styles */
+.Home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.photo-contact-section {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  margin: 2rem 0;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.Name {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 700;
+  color: var(--primary-text);
+  margin-bottom: 1rem;
+  text-align: center;
+  background: linear-gradient(135deg, var(--primary-text), var(--accent-text));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.About {
+  font-size: clamp(1.5rem, 3vw, 2.5rem);
+  font-weight: 600;
+  color: var(--secondary-text);
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.Photo {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid var(--accent-text);
+  margin: 2rem 0;
+  box-shadow: 0 10px 30px rgba(14, 165, 233, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.Photo:hover {
+  transform: scale(1.05);
+}
+
+.AboutMe {
+  max-width: 800px;
+  margin: 2rem 0;
+  padding: 2rem;
+  background-color: var(--secondary-bg);
+  border-radius: 1rem;
+  border: 1px solid var(--border-color);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.AboutMe p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: var(--secondary-text);
+  margin-bottom: 1rem;
+}
+
+.GetInTouch {
   font-size: 1.5rem;
-  color:  hsl(0, 0%, 33%);
-  
+  font-weight: 600;
+  color: var(--primary-text);
+  margin: 2rem 0 1rem;
 }
-.SpecialOne, .SpecialTwo {
-  color: hsl(0, 0%, 33%);
+
+/* Button Styles */
+.LinkedinButton {
+  background: linear-gradient(135deg, var(--button-primary), var(--button-hover));
+  border: none;
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 0.75rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(14, 165, 233, 0.3);
+}
+
+.LinkedinButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 25px rgba(14, 165, 233, 0.4);
+}
+
+/* Section Headers */
+.WorkExperience, .Hackathon, .Project {
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 700;
+  color: var(--primary-text);
+  text-align: center;
+  margin: 3rem 0 2rem;
+  padding: 2rem 0;
+  position: relative;
+}
+
+.WorkExperience::after, .Hackathon::after, .Project::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 4px;
+  background: linear-gradient(135deg, var(--accent-text), var(--button-hover));
+  border-radius: 2px;
+}
+
+/* Content Sections */
+.RelevantWorkExperience, .Hackathons, .Projects {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.JobOne, .JobTwo, .JobThree, .JobFour,
+.HackOne, .HackTwo,
+.ProjectOne, .ProjectTwo, .ProjectThree, .ProjectFour {
+  background-color: var(--secondary-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 1rem;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.JobOne:hover, .JobTwo:hover, .JobThree:hover, .JobFour:hover,
+.HackOne:hover, .HackTwo:hover,
+.ProjectOne:hover, .ProjectTwo:hover, .ProjectThree:hover, .ProjectFour:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Job/Project Headers */
+.JobOne, .JobTwo, .JobThree, .JobFour {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.TheScore, .VC, .Ruii, .MOT,
+.Roborama, .CSHub,
+.Weather, .DiscordBot, .Fitness {
+  font-size: 1.45rem;
+  font-weight: 600;
+  color: var(--primary-text);
+  margin: 0;
+}
+
+.DateOne, .DateTwo, .DateThree, .DateFour {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--accent-text);
+  background-color: var(--accent-bg);
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  margin: 0;
+}
+
+/* Lists */
+.listOne, .listTwo, .listThree,
+.HackListOne, .HackListTwo,
+.ProjectListOne, .ProjectListTwo, .ProjectListThree, .ProjectListFour {
+  margin: 1.5rem 0 0 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.listOne li, .listTwo li, .listThree li,
+.HackListOne li, .HackListTwo li,
+.ProjectListOne li, .ProjectListTwo li, .ProjectListThree li, .ProjectListFour li {
+  position: relative;
+  padding: 0.75rem 0 0.75rem 2rem;
+  color: var(--secondary-text);
+  line-height: 1.6;
+  margin-bottom: 0.5rem;
+  border-left: 3px solid var(--accent-bg);
+  padding-left: 1.5rem;
+}
+
+.listOne li::before, .listTwo li::before, .listThree li::before,
+.HackListOne li::before, .HackListTwo li::before,
+.ProjectListOne li::before, .ProjectListTwo li::before, .ProjectListThree li::before, .ProjectListFour li::before {
+  content: '▸';
+  position: absolute;
+  left: 0;
+  color: var(--accent-text);
   font-weight: bold;
 }
+
+/* Special Links */
+.SpecialOne, .SpecialTwo {
+  color: var(--accent-text);
+  text-decoration: none;
+  font-weight: 600;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
 .SpecialOne:hover, .SpecialTwo:hover {
-  color: hsl(0, 0%, 33%); /* This maintains your existing hover effect */
-  font-size: 2rem; /* This maintains your existing hover effect */
+  color: var(--button-hover);
 }
 
-.listOne,.listTwo,.listThree{
-  font-size: 1rem;
-  color: hsl(0, 0%, 33%);
-}
-.HackListOne ,.HackListTwo{
-  font-size: 1rem;
-  color: hsl(0, 0%, 33%);
-}
-.ProjectListOne,.ProjectListTwo,.ProjectListThree, .ProjectListFour{
-  font-size: 1rem;
-  color: hsl(0, 0%, 33%);
+.SpecialOne::after, .SpecialTwo::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(135deg, var(--accent-text), var(--button-hover));
+  transition: width 0.3s ease;
 }
 
-.WorkExperience{
-  font-size: 5rem;
-  color:  hsl(0, 0%, 33%);
-  margin: 0;
-}
-.JobOne, .JobTwo, .JobThree, .JobFour{
-  font-size: 1.5rem;
-  color:  hsl(0, 0%, 33%);
-}
-.listOne,.listTwo,.listThree{
-  font-size: 1rem;
+.SpecialOne:hover::after, .SpecialTwo:hover::after {
+  width: 100%;
 }
 
-.MOT, .DateFour {
-  margin: 0;
-  color: hsl(0, 0%, 33%);
+/* Responsive Design */
+@media (max-width: 768px) {
+  .links {
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem;
+  }
   
+  .Home {
+    padding: 2rem 1rem;
+  }
+
+  .photo-contact-section {
+    flex-direction: column;
+    gap: 2rem;
+    text-align: center;
+  }
+
+  .contact-info {
+    align-items: center;
+  }
+  
+  .AboutMe {
+    padding: 1.5rem;
+    margin: 1rem;
+  }
+  
+  .JobOne, .JobTwo, .JobThree, .JobFour {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .RelevantWorkExperience, .Hackathons, .Projects {
+    padding: 1rem;
+  }
+}
+
+/* Smooth Animations */
+* {
+  scroll-behavior: smooth;
+}
+
+/* Loading Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.Home > *, 
+.RelevantWorkExperience > *,
+.Hackathons > *,
+.Projects > * {
+  animation: fadeIn 0.6s ease-out;
 }
