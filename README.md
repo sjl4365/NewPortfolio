@@ -9,3 +9,11 @@ Currently, two official plugins are available:
 
 npm run dev
 npm run build
+
+git checkout main
+
+# Build your project (you already did this)
+npm run build
+
+# Deploy to gh-pages branch
+npx gh-pages -d dist

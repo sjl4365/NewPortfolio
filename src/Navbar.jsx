@@ -10,7 +10,7 @@ const Navbar=()=>{
             <Link to="/" className="HomeRoute">Home</Link>
             <Link to="/work" className="WorkRoute">Work Experience</Link>
             {/* <Link to="/student" className="SchoolRoute">Student Involvement</Link> */}
-            <Link to="/extra" className="ExtraRoute">Extracurricular Acrtivities</Link>
+            <Link to="/extra" className="ExtraRoute">Extracurricular Activities</Link>
             <Link to="/hackathon" className='HackRoute'>Hackathon</Link>
             <Link to="/project" className="ProjRoute">Projects</Link>
                 {/* <a href="/" className='HomeRoute'>Home</a> 
