@@ -8,6 +8,7 @@ import Hackathon from './Hackathon';
 import Project from './Project';
 import Workexperience from './Workexperience';
 import SchoolInvolvement from './SchoolInvolvement';
+import ExtracurricularActivities from './ExtracurricularActivities';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/work" element={<Workexperience />} />
             <Route path="/student" element={<SchoolInvolvement/>} />
+            <Route path="/extra" element={<ExtracurricularActivities/>} />
             <Route path="/hackathon" element={<Hackathon />} />
             <Route path="/project" element={<Project />} />
           </Routes>

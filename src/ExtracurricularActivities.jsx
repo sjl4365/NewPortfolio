@@ -1,5 +1,5 @@
-/*src/SchoolInvolvement.jsx */
-function SchoolInvolvement(){
+/*src/ExtracurricularActivities.jsx */
+function ExtracurricularActivities(){
 
     return(
     
@@ -46,4 +46,4 @@ clarification on wagering-related issues</li>
         
     </div>);
 }
-export default SchoolInvolvement
+export default ExtracurricularActivities

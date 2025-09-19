@@ -69,7 +69,7 @@ nav {
   width: 100%;
 }
 
-.HomeRoute, .WorkRoute, .HackRoute, .ProjRoute, .SchoolRoute {
+.HomeRoute, .WorkRoute, .HackRoute, .ProjRoute,  .ExtraRoute {
   font-size: 1rem;
   font-weight: 500;
   color: var(--secondary-text);
@@ -80,7 +80,7 @@ nav {
   position: relative;
 }
 
-.HomeRoute:hover, .WorkRoute:hover, .HackRoute:hover, .ProjRoute:hover, .SchoolRoute:hover {
+.HomeRoute:hover, .WorkRoute:hover, .HackRoute:hover, .ProjRoute:hover,  .ExtraRoute:hover{
   color: var(--accent-text);
   background-color: var(--hover-bg);
   transform: translateY(-1px);
