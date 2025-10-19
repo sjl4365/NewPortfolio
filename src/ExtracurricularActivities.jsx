@@ -28,7 +28,7 @@ Developed and facilitated weekly learning sessions for the course which involved
         <div >
             <div className="JobOne">
                 <h3 className="MOT">Volunteer Note Taker @Student Accessibility Services York University</h3>
-                <h4 className="DateOne">Jan 2024 - Aug 2024</h4>
+                <h4 className="DateOne">Jan 2023 - Apr 2023</h4>
             </div>
             <ul className="listOne">
 
