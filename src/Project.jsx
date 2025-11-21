@@ -10,8 +10,11 @@ function Project(){
                     </div>
                     
                     <ul className="ProjectListOne">
-                        <li>Currently designing and developing a 'Today in History' mobile app using React Native</li>
-                        <li>App will display a random historical event for a given month and year and the content will be available in English, Korean, Chinese, and Japanese</li>
+                        <li>Developed mobile application using React Native with a TypeScript API layer, delivering localized historical content
+across 3 regions (Korea, Japan, World) with three language support (Korean, English, Japanese), featuring custom tab
+navigation, segmented country selector, settings management, dynamic UI theming, and customizable fonts</li>
+                        <li>Deployed Amplitude analytics framework to capture user engagement data across core features (country filtering,
+date navigation, content sharing), establishing data-driven feedback loop for continuous product improvement</li>
                     </ul>
                 </div>
                 <div>
