@@ -32,15 +32,9 @@ Developed and facilitated weekly learning sessions for the course which involved
             </div>
             <ul className="listOne">
 
-                <li>Worked on 17 releases for the wagering team, performing comprehensive regression, backward compatibility, migration,
-and production smoke testing across multiple environments (UAT, Demo, Staging) and platforms (Android, iOS, web) for
-theScore Bet and ESPN, covering approximately 3,000 test cases</li>
-            <li>Identified production bugs, creating 5 new functional tickets on JIRA and Confluence, and signed off on approximately 140
-functional tickets, including 2 feature enhancements related to market logo rebranding and home page market
-recommendations. Developed new test cases in TestRail and delivered detailed reports</li>
+                <li>Provided comprehensive lecture notes to students with physical difficulties through an accessibility services program, ensuring inclusive access to course material and promoting an equitable learning environment</li>
 
-            <li>Participated in weekly stand-ups, occasionally leading sessions, and provided cross-departmental support by offering
-clarification on wagering-related issues</li>
+            <li>Demonstrated a user centric mindset by proactively anticipating the needs of students unable to attend lectures, ensuring clear and accessible communication to help them stay up to date with coursework and succeed academically</li>
             </ul>
         </div>
         
