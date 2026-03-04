@@ -17,6 +17,21 @@ navigation, segmented country selector, settings management, dynamic UI theming,
 date navigation, content sharing), establishing data-driven feedback loop for continuous product improvement</li>
                     </ul>
                 </div>
+
+                <div >
+                    <div className="ProjectOne">
+                        <a href="https://www.figma.com/design/NWnschvub7J2NPTqGk4i9H/Group-11-Mid-Fi-Prototype?node-id=0-1&t=Aexgm1ecjB1qUakC-1" className="SpecialOne">Plant Care Mobile App</a>
+                    </div>
+                    
+                    <ul className="ProjectListOne">
+                        <li>Designed a comprehensive plant health mobile application in Figma, creating end to end UX flows across 20 screens
+including plant care checklists, soil moisture tracking, health diagnostics, journaling, and a structured learning pathway
+with interactive lessons</li>
+                        <li>Developed a complete interactive prototype featuring multi screen navigation flows, component based design systems,
+and user centered interfaces for plant task management, care logging, and light placement guidance</li>
+                    </ul>
+                </div>
+
                 <div>
                     <div className="ProjectFour">
                         <h3 className="Fitness">Fitness Website</h3>
